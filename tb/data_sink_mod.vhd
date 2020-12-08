@@ -3,14 +3,14 @@
 -- Modified version of the "data_sink.vhd" example code provided
 -- fot Lab 1.
 -- Data coming from the output FP_Z are saved in the file
--- "fpmul_vhd.txt" whenever the EN signal is sampled as high.
+-- "fpmul_mod_vhd.txt" whenever the EN signal is sampled as high.
 -- Each time a new value is saved, it is compared with the 
 -- corresponding value coming from the file "fp_prod.hex",
 -- containing the correct value: if the two values mismatch, ERR
 -- is set to 1.
 -- 
 --
--- Project: Lab 2 - fpmul
+-- Project: Lab 2 - fpmul_mod
 -- Authors: Group 32 (Chatrasi, Di Bella, Zangeneh)
 -- Last modified: 8/12/2020 16:38
 ----------------------------------------------------------------
@@ -38,7 +38,7 @@ begin  -- bhv
   	
 	wrt_file: process (CLK, RST_n)
   
-		file res_fp : text open WRITE_MODE is "results/fpmul_vhd.txt"; --Output file to be written
+		file res_fp : text open WRITE_MODE is "results/fpmul_mod_vhd.txt"; --Output file to be written
 		variable line_out : line;
 		
 		file fp_in : text open READ_MODE is "../tb/fp_prod.hex"; --Input file with results

@@ -1,12 +1,15 @@
 ----------------------------------------------------------------
--- CLOCK GENERATOR
--- Modified version of the "clk_gen.vhd" example code provided 
--- for the Lab 1.
--- Generates a clock signal of period Ts.
+-- DATA MAKER
+-- It reads, line by line, the samples stored into the the file
+-- "fp_samples.hex" and sends it to the DUT from the DATA port.
+-- The END_SIM output signal is raised after 10 clock cycles
+-- from the reaching of EOF.
+-- D_READY is raised every team a new valid data is 
+-- read from the input file.
 --
 -- Project: Lab 2
 -- Authors: Group 32 (Chatrasi, Di Bella, Zangeneh)
--- Last modified: 8/12/2020 09:50
+-- Last modified: 8/12/2020 16:35
 ----------------------------------------------------------------
 
 library ieee;
@@ -20,10 +23,13 @@ use std.textio.all;
 
 entity data_maker is
   port (
-    CLK  	: in  std_logic;
-    DATA 	: out std_logic_vector(31 downto 0)
-	END_SIM : out std_logic);
+	RST_n		: in  std_logic;
+    CLK  		: in  std_logic;
+    DATA 		: out std_logic_vector(31 downto 0);
+	END_SIM 	: out std_logic;
+	D_READY		: out std_logic);
 end data_maker;
+
 
 architecture beh of data_maker is
 
@@ -34,19 +40,26 @@ begin  -- beh
 
     rd_file: process (CLK)
 	
-		file fp : text open read_mode is "tb/fp_samples.hex";
+		file fp : text open read_mode is "../tb/fp_samples.hex";
 		variable ptr : line;
 		variable val : std_logic_vector(31 downto 0);
 	
 	begin  -- process
-		if CLK'event and CLK = '1' then  -- rising clock edge
+
+		if RST_n = '0' then
+			sEndSim <= '0';
+			D_READY <= '0';
+
+		elsif CLK'event and CLK = '1' then  -- rising clock edge
 			if (not(endfile(fp))) then
 				readline(fp, ptr);
-				read(ptr, val);     
+				hread(ptr, val);     
 				DATA <= val;
 				sEndSim <= '0';
+				D_READY <= '1';
 			else 
 				sEndSim <= '1';
+				D_READY <= '0';
 			end if;
 		end if;
 	end process rd_file;
@@ -62,6 +75,6 @@ begin  -- beh
 		end if;
 	end process shift_count;
 
-  END_SIM <= END_SIM_i(10);
+  	END_SIM <= END_SIM_i(10);
 
 end beh;
