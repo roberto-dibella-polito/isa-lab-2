@@ -34,7 +34,7 @@ begin  -- bhv
   	
 	wrt_file: process (CLK, RST_n)
   
-		file res_fp : text open WRITE_MODE is "resutlts/fpmul_vhd.txt"; --Output file to be written
+		file res_fp : text open WRITE_MODE is "results/fpmul_vhd.txt"; --Output file to be written
 		variable line_out : line;
 		
 		file fp_in : text open READ_MODE is "tb/fp_prod.hex"; --Input file with results
