@@ -70,12 +70,36 @@ ARCHITECTURE struct OF FPmul_stage2 IS
    SIGNAL prod        : std_logic_vector(63 DOWNTO 0);
 
 
+	-- Internal signals - Added registers
+	-- Register on the output of the multiplier
+	signal prod_to_sig 		  : std_logic_vector(63 downto 0);
+	signal EXP_in_int_to_out  : std_logic_vector(7 DOWNTO 0);
+   	signal EXP_neg_int_to_out : std_logic;
+   	signal EXP_pos_int_to_out : std_logic;
+
+	-- Registers for direct in-to-out signals
+	signal isINF_s1_to_s2 : std_logic;
+    signal isNaN_s1_to_s2 : std_logic;
+    signal isZ_tab_s1_to_s2 : std_logic;
+    signal SIGN_out_s1_to_s2: std_logic;
+
+
 
 BEGIN
    -- Architecture concurrent statements
    -- HDL Embedded Text Block 1 sig
    -- eb1 1
-   SIG_in_int <= prod(47 DOWNTO 20);
+
+	-- MULTIPLIER OUTPUT REGISTER -------------------
+	mult_reg: process(clk)
+	begin
+		if RISING_EDGE(clk) then
+			prod_to_sig <= prod;
+		end if;
+	end process mult_reg;
+
+	SIG_in_int <= prod_to_sig(47 DOWNTO 20);
+	-------------------------------------------------
 
    -- HDL Embedded Text Block 2 inv
    -- eb5 5
@@ -84,27 +108,54 @@ BEGIN
    -- HDL Embedded Text Block 3 latch
    -- eb2 2
    
-   PROCESS(clk)
+	--------------------------------------------------
+	-- In-to-out registers
+	int_to_out_regs: PROCESS(clk)
+	BEGIN
+	  IF RISING_EDGE(clk) THEN
+	     EXP_in_int_to_out <= EXP_in_int;
+	     SIG_in <= SIG_in_int;
+	     EXP_pos_int_to_out <= EXP_pos_int;
+	     EXP_neg_int_to_out <= EXP_neg_int;
+	  END IF;
+	END PROCESS int_to_out_regs;
+
+	-- Output registers
+   out_regs: PROCESS(clk)
    BEGIN
       IF RISING_EDGE(clk) THEN
-         EXP_in <= EXP_in_int;
-         SIG_in <= SIG_in_int;
-         EXP_pos_stage2 <= EXP_pos_int;
-         EXP_neg_stage2 <= EXP_neg_int;
+         EXP_in <= EXP_in_int_to_out;
+         EXP_pos_stage2 <= EXP_pos_int_to_out;
+         EXP_neg_stage2 <= EXP_neg_int_to_out;
       END IF;
-   END PROCESS;
+   END PROCESS out_regs;
 
    -- HDL Embedded Text Block 4 latch2
    -- latch2 4
-   PROCESS(clk)
+
+	-- Direct in-to-out pipelining registers
+
+   s1_to_s2_out_regs: PROCESS(clk)
    BEGIN
       IF RISING_EDGE(clk) THEN
-         isINF_stage2 <= isINF_stage1;
-         isNaN_stage2 <= isNaN_stage1;
-         isZ_tab_stage2 <= isZ_tab_stage1;
-         SIGN_out_stage2 <= SIGN_out_stage1;
+         isINF_stage2 <= isINF_s1_to_s2;
+         isNaN_stage2 <= isNaN_s1_to_s2;
+         isZ_tab_stage2 <= isZ_tab_s1_to_s2;
+         SIGN_out_stage2 <= SIGN_out_s1_to_s2;
       END IF;
-   END PROCESS;
+   END PROCESS s1_to_s2_out_regs;
+
+   s1_to_s2_regs: PROCESS(clk)
+   BEGIN
+      IF RISING_EDGE(clk) THEN
+         isINF_s1_to_s2 <= isINF_stage1;
+         isNaN_s1_to_s2 <= isNaN_stage1;
+         isZ_tab_s1_to_s2 <= isZ_tab_stage1;
+         SIGN_out_s1_to_s2 <= SIGN_out_stage1;
+      END IF;
+   END PROCESS s1_to_s2_regs;
+	----------------------------------------------
+
 
    -- HDL Embedded Text Block 5 eb1
    -- exp_pos 5
