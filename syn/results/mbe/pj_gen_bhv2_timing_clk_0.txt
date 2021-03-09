@@ -1,0 +1,40 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : pj_generator
+Version: O-2018.06-SP4
+Date   : Tue Mar  9 14:07:48 2021
+****************************************
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: b_in[0] (input port)
+  Endpoint: pj[30] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  pj_generator       5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 f
+  b_in[0] (in)                             0.00       0.00 f
+  U146/ZN (INV_X1)                         0.03       0.03 r
+  U144/ZN (OR2_X1)                         0.03       0.06 r
+  U79/Z (MUX2_X2)                          0.14       0.20 r
+  U78/ZN (NAND2_X2)                        0.17       0.37 f
+  U95/ZN (OAI22_X1)                        0.11       0.47 r
+  pj[30] (out)                             0.02       0.50 r
+  data arrival time                                   0.50
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+1

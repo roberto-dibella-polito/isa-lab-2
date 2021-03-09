@@ -1,0 +1,30 @@
+ 
+****************************************
+Report : area
+Design : pj_generator
+Version: O-2018.06-SP4
+Date   : Tue Mar  9 14:05:37 2021
+****************************************
+
+Library(s) Used:
+
+    NangateOpenCellLibrary (File: /software/dk/nangate45/synopsys/NangateOpenCellLibrary_typical_ecsm.db)
+
+Number of ports:                          169
+Number of nets:                           272
+Number of cells:                          171
+Number of combinational cells:            135
+Number of sequential cells:                33
+Number of macros/black boxes:               0
+Number of buf/inv:                         33
+Number of references:                      10
+
+Combinational area:                152.418000
+Buf/Inv area:                       17.822000
+Noncombinational area:              87.780003
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                   240.198003
+Total area:                 undefined
+1

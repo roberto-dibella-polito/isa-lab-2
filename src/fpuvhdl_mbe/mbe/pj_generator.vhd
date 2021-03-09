@@ -20,8 +20,13 @@ architecture bhv_1 of pj_generator is
 	
 	signal sel_0, sel_A, sel_2A : std_logic;
 	signal qj 					: std_logic_vector(32 downto 0);
+
+	signal b2_extended, b2_resized, temp	: std_logic_vector(32 downto 0);
 	
 begin
+
+	b2_extended <= (others=>b_in(2));	
+	b2_resized <= "00000000000000000000000000000000" & b_in(2);
 	
 	sel_0 <= not(b_in(1) xor b_in(0)) and not(b_in(2) xor b_in(1));
 	sel_A <= b_in(1) xor b_in(0);
@@ -31,21 +36,24 @@ begin
 	-- Done in this way to speed-up the modeling process
 	qj_sel: process(sel_0, sel_A, sel_2A)
 	begin
-		if sel_0 then
+		if sel_0 = '1' then
 			qj <= (others=>'0');
 		
-		elsif sel_A then 
+		elsif sel_A = '1' then 
 			qj <= A_SIG(31) & A_SIG;
 		
-		elsif sel_2A then
+		elsif sel_2A = '1' then
 			qj <= A_SIG & '0';
 			
 		end if;
 	end process;
 	
-	pj <= ( b_in(2) xor qj ) or b_in(2);
+	-- 2's complement
+	temp <= qj xor b2_extended;
+	pj <= std_logic_vector(unsigned(qj) + unsigned(b2_resized));
 	
 end bhv_1;
+
 
 -- SECOND ARCHITECTURE:
 -- The value of qj is chosen comparing directly b_in: 
@@ -53,22 +61,25 @@ end bhv_1;
 
 architecture bhv_2 of pj_generator is
 
-	signal qj : std_logic_vector(32 downto 0);
+	signal qj 								: std_logic_vector(32 downto 0);
+	signal b2_extended, b2_resized, temp	: std_logic_vector(32 downto 0);
 	
 begin
 	
 	qj_sel: process(b_in)
 	begin
-	
-		case b_in is
-			
-			when "000" or "111" => qj <= (others=>'0');
-			when "011" or "100" => qj <= A_SIG & '0';
-			when others => qj <= A_SIG(31) & A_SIG;
-		
-		end case;
-		
+
+		if 		b_in = "000" or b_in = "111" then qj <= (others=>'0');
+		elsif 	b_in = "011" or b_in = "100" then qj <= A_SIG & '0';
+		else	qj <= A_SIG(31) & A_SIG;		
+		end if;
+
 	end process;
+
+
+	-- 2's complement
+	temp <= qj xor b2_extended;
+	pj <= std_logic_vector(unsigned(qj) + unsigned(b2_resized));
 
 end bhv_2;
 		
