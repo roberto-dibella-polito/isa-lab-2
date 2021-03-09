@@ -1,0 +1,52 @@
+Information: Updating design information... (UID-85)
+Warning: There are infeasible paths detected in your design that were ignored during optimization. Please run 'report_timing -attributes' and/or 'create_qor_snapshot/query_qor_snapshot -infeasible_paths' to identify these paths.  (OPT-1721)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : FPmul
+Version: O-2018.06-SP4
+Date   : Tue Dec  8 21:47:34 2020
+****************************************
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: I4/I3/MY_CLK_r_REG30_S6
+              (rising edge-triggered flip-flop clocked by MY_CLK)
+  Endpoint: FP_Z[0] (output port clocked by MY_CLK)
+  Path Group: MY_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FPmul              5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock MY_CLK (rise edge)                 0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  I4/I3/MY_CLK_r_REG30_S6/CK (DFF_X1)      0.00       0.00 r
+  I4/I3/MY_CLK_r_REG30_S6/Q (DFF_X1)       0.08       0.08 r
+  I4/I3/U3/ZN (AND2_X1)                    0.12       0.21 r
+  I4/I3/U9/ZN (AND2_X1)                    0.07       0.28 r
+  I4/I3/FP[0] (PackFP)                     0.00       0.28 r
+  I4/FP_Z[0] (FPmul_stage4)                0.00       0.28 r
+  FP_Z[0] (out)                            0.02       0.30 r
+  data arrival time                                   0.30
+
+  clock MY_CLK (rise edge)                 0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  clock uncertainty                       -0.07      -0.07
+  output external delay                   -0.50      -0.57
+  data required time                                 -0.57
+  -----------------------------------------------------------
+  data required time                                 -0.57
+  data arrival time                                  -0.30
+  -----------------------------------------------------------
+  slack (VIOLATED)                                   -0.87
+
+
+1
