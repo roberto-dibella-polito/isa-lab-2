@@ -4,9 +4,9 @@ use ieee.numeric_std.all;
 
 entity mbe is
 	port(
-		A_SIG	: in unsigned(31 downto 0);
-		B_SIG	: in unsigned(31 downto 0);
-		PROD	: out unsigned(63 downto 0)
+		A_SIG	: in std_logic_vector(31 downto 0);
+		B_SIG	: in std_logic_vector(31 downto 0);
+		PROD	: out std_logic_vector(63 downto 0)
 	);
 end mbe;
 
@@ -48,7 +48,7 @@ architecture structure of mbe is
 	signal multiplier 	: std_logic_vector(32 downto 0);
 	--signal bin			: std_logic_vector(2 downto 0);
 	
-	type radix is array (17 downto 0) of std_logic_vector(2 downto 0);
+	type radix is array (16 downto 0) of std_logic_vector(2 downto 0);
 	signal bin : radix;
 	
 	type partial_product is array (16 downto 0) of std_logic_vector(32 downto 0);
@@ -63,28 +63,48 @@ architecture structure of mbe is
 	signal p16_extended : std_logic_vector(33 downto 0);
 	
 	signal op1, op2 : std_logic_vector(63 downto 0);
+	signal ptemp	: unsigned(63 downto 0);
 	signal dadda_overflow: std_logic;
 	
 	
 begin
 	
 	multiplier <= std_logic_vector(B_SIG) & '0';
+	bin(0) <= B_SIG(1) & B_SIG(0) & '0';
+	bin(1) <= B_SIG(3) & B_SIG(2) & B_SIG(1);
+	bin(2) <= B_SIG(5) & B_SIG(4) & B_SIG(3);
+	bin(3) <= B_SIG(7) & B_SIG(6) & B_SIG(5);
+	bin(4) <= B_SIG(9) & B_SIG(8) & B_SIG(7);
+	bin(5) <= B_SIG(11) & B_SIG(10) & B_SIG(9);
+	bin(6) <= B_SIG(13) & B_SIG(12) & B_SIG(11);
+	bin(7) <= B_SIG(15) & B_SIG(14) & B_SIG(13);
+	bin(8) <= B_SIG(17) & B_SIG(16) & B_SIG(15);
+	bin(9) <= B_SIG(19) & B_SIG(18) & B_SIG(17);
+	bin(10) <= B_SIG(21) & B_SIG(20) & B_SIG(19);
+	bin(11) <= B_SIG(23) & B_SIG(22) & B_SIG(21);
+	bin(12) <= B_SIG(25) & B_SIG(24) & B_SIG(23);
+	bin(13) <= B_SIG(27) & B_SIG(26) & B_SIG(25);
+	bin(14) <= B_SIG(29) & B_SIG(28) & B_SIG(27);
+	bin(15) <= B_SIG(31) & B_SIG(30) & B_SIG(29);
+	bin(16) <= B_SIG(31) & B_SIG(31) & B_SIG(31);
+
+
 	
 	-- Given each triplet b(2j+1),b(2j),b(2j-1) i have to place on Pj generator
-	partial_products: for i in 0 to 31 generate
+	partial_products: for i in 0 to 16 generate
 	
-		pj_right: if (i rem 2) /= 0 generate
+		 --pj_right: if (i rem 2) /= 0 generate
 		
-			bin(i/2) <= multiplier(i+1) & multiplier(i) & multiplier(i-1);
+			--bin(i/2) <= multiplier(i+1) & multiplier(i) & multiplier(i-1);
 			
 			partial: entity work.pj_generator(bhv_2) port map
 			( 
 				A_SIG 	=> std_logic_vector(A_SIG),
-				b_in	=> bin(i/2),
-				pj		=> pj(i/2)
+				b_in	=> bin(i),
+				pj		=> pj(i)
 			);
 			
-		end generate;
+		--end generate;
 	end generate;
 
 	
@@ -133,7 +153,8 @@ begin
 	
 	-- Final adder
 	
-	PROD <= unsigned(op1) + unsigned(op2);
+	ptemp <= unsigned(op1) + unsigned(op2);
+	PROD  <= std_logic_vector(ptemp);
 	
 end structure;
 	
