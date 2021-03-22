@@ -8,331 +8,7 @@
 # //  OF MENTOR GRAPHICS CORPORATION OR ITS LICENSORS
 # //  AND IS SUBJECT TO LICENSE TERMS.
 # //
-source "scripts/sim_mod_mbe.tcl"
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package std_logic_unsigned
-# -- Compiling entity clk_gen
-# -- Compiling architecture bhv of clk_gen
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package std_logic_unsigned
-# -- Loading package textio
-# -- Loading package std_logic_textio
-# -- Compiling entity data_maker
-# -- Compiling architecture beh of data_maker
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package std_logic_unsigned
-# -- Loading package textio
-# -- Loading package std_logic_textio
-# -- Compiling entity data_sink
-# -- Compiling architecture bhv of data_sink
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package std_logic_unsigned
-# -- Loading package textio
-# -- Loading package std_logic_textio
-# -- Compiling entity delayer
-# -- Compiling architecture bhv of delayer
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package std_logic_unsigned
-# -- Compiling entity fpnormalize
-# -- Compiling architecture fpnormalize of fpnormalize
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package std_logic_unsigned
-# -- Compiling entity fpround
-# -- Compiling architecture fpround of fpround
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Compiling entity packfp
-# -- Compiling architecture packfp of packfp
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Compiling entity unpackfp
-# -- Compiling architecture unpackfp of unpackfp
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Compiling entity ha
-# -- Compiling architecture structure of ha
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Compiling entity fa
-# -- Compiling architecture structure of fa
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Compiling entity dadda
-# -- Compiling architecture structure of dadda
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package numeric_std
-# -- Compiling entity pj_generator
-# -- Compiling architecture bhv_1 of pj_generator
-# -- Compiling architecture bhv_2 of pj_generator
-# -- Loading entity pj_generator
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package numeric_std
-# -- Compiling entity mbe
-# -- Compiling architecture structure of mbe
-# -- Loading entity pj_generator
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Compiling entity fpmul_stage1
-# -- Compiling architecture struct of fpmul_stage1
-# -- Loading entity unpackfp
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Compiling entity fpmul_stage2
-# -- Compiling architecture struct of fpmul_stage2
-# ** Error: ../src/fpuvhdl_mbe/multiplier/fpmul_stage2_struct_mbe.vhd(148): Signal "a_sig" is type ieee.std_logic_1164.std_logic_vector; expecting type ieee.std_logic_arith.unsigned.
-# ** Error: ../src/fpuvhdl_mbe/multiplier/fpmul_stage2_struct_mbe.vhd(149): Signal "b_sig" is type ieee.std_logic_1164.std_logic_vector; expecting type ieee.std_logic_arith.unsigned.
-# ** Error: ../src/fpuvhdl_mbe/multiplier/fpmul_stage2_struct_mbe.vhd(150): Signal "prod" is type ieee.std_logic_1164.std_logic_vector; expecting type ieee.std_logic_arith.unsigned.
-# ** Error: ../src/fpuvhdl_mbe/multiplier/fpmul_stage2_struct_mbe.vhd(159): VHDL Compiler exiting
-# /software/mentor/modelsim_6.2g/linux/vcom failed.
-source "scripts/sim_mod_mbe.tcl"
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package std_logic_unsigned
-# -- Compiling entity clk_gen
-# -- Compiling architecture bhv of clk_gen
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package std_logic_unsigned
-# -- Loading package textio
-# -- Loading package std_logic_textio
-# -- Compiling entity data_maker
-# -- Compiling architecture beh of data_maker
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package std_logic_unsigned
-# -- Loading package textio
-# -- Loading package std_logic_textio
-# -- Compiling entity data_sink
-# -- Compiling architecture bhv of data_sink
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package std_logic_unsigned
-# -- Loading package textio
-# -- Loading package std_logic_textio
-# -- Compiling entity delayer
-# -- Compiling architecture bhv of delayer
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package std_logic_unsigned
-# -- Compiling entity fpnormalize
-# -- Compiling architecture fpnormalize of fpnormalize
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package std_logic_unsigned
-# -- Compiling entity fpround
-# -- Compiling architecture fpround of fpround
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Compiling entity packfp
-# -- Compiling architecture packfp of packfp
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Compiling entity unpackfp
-# -- Compiling architecture unpackfp of unpackfp
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Compiling entity ha
-# -- Compiling architecture structure of ha
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Compiling entity fa
-# -- Compiling architecture structure of fa
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Compiling entity dadda
-# -- Compiling architecture structure of dadda
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package numeric_std
-# -- Compiling entity pj_generator
-# -- Compiling architecture bhv_1 of pj_generator
-# -- Compiling architecture bhv_2 of pj_generator
-# -- Loading entity pj_generator
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package numeric_std
-# -- Compiling entity mbe
-# -- Compiling architecture structure of mbe
-# -- Loading entity pj_generator
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Compiling entity fpmul_stage1
-# -- Compiling architecture struct of fpmul_stage1
-# -- Loading entity unpackfp
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Compiling entity fpmul_stage2
-# -- Compiling architecture struct of fpmul_stage2
-# ** Error: ../src/fpuvhdl_mbe/multiplier/fpmul_stage2_struct_mbe.vhd(150): Signal "prod" is type ieee.std_logic_1164.std_logic_vector; expecting type ieee.std_logic_arith.unsigned.
-# ** Error: ../src/fpuvhdl_mbe/multiplier/fpmul_stage2_struct_mbe.vhd(159): VHDL Compiler exiting
-# /software/mentor/modelsim_6.2g/linux/vcom failed.
-source "scripts/sim_mod_mbe.tcl"
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package std_logic_unsigned
-# -- Compiling entity clk_gen
-# -- Compiling architecture bhv of clk_gen
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package std_logic_unsigned
-# -- Loading package textio
-# -- Loading package std_logic_textio
-# -- Compiling entity data_maker
-# -- Compiling architecture beh of data_maker
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package std_logic_unsigned
-# -- Loading package textio
-# -- Loading package std_logic_textio
-# -- Compiling entity data_sink
-# -- Compiling architecture bhv of data_sink
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package std_logic_unsigned
-# -- Loading package textio
-# -- Loading package std_logic_textio
-# -- Compiling entity delayer
-# -- Compiling architecture bhv of delayer
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package std_logic_unsigned
-# -- Compiling entity fpnormalize
-# -- Compiling architecture fpnormalize of fpnormalize
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package std_logic_unsigned
-# -- Compiling entity fpround
-# -- Compiling architecture fpround of fpround
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Compiling entity packfp
-# -- Compiling architecture packfp of packfp
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Compiling entity unpackfp
-# -- Compiling architecture unpackfp of unpackfp
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Compiling entity ha
-# -- Compiling architecture structure of ha
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Compiling entity fa
-# -- Compiling architecture structure of fa
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Compiling entity dadda
-# -- Compiling architecture structure of dadda
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package numeric_std
-# -- Compiling entity pj_generator
-# -- Compiling architecture bhv_1 of pj_generator
-# -- Compiling architecture bhv_2 of pj_generator
-# -- Loading entity pj_generator
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package numeric_std
-# -- Compiling entity mbe
-# -- Compiling architecture structure of mbe
-# -- Loading entity pj_generator
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Compiling entity fpmul_stage1
-# -- Compiling architecture struct of fpmul_stage1
-# -- Loading entity unpackfp
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Compiling entity fpmul_stage2
-# -- Compiling architecture struct of fpmul_stage2
-# ** Error: ../src/fpuvhdl_mbe/multiplier/fpmul_stage2_struct_mbe.vhd(148): Type conversion (to ieee.std_logic_arith.unsigned) conflicts with expected type ieee.std_logic_1164.std_logic_vector.
-# ** Error: ../src/fpuvhdl_mbe/multiplier/fpmul_stage2_struct_mbe.vhd(149): Type conversion (to ieee.std_logic_arith.unsigned) conflicts with expected type ieee.std_logic_1164.std_logic_vector.
-# ** Error: ../src/fpuvhdl_mbe/multiplier/fpmul_stage2_struct_mbe.vhd(159): VHDL Compiler exiting
-# /software/mentor/modelsim_6.2g/linux/vcom failed.
-source "scripts/sim_mod_mbe.tcl"
+source "scripts/sim_mod_fgp_mbe.tcl"
 # Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
 # -- Loading package standard
 # -- Loading package std_logic_1164
@@ -497,7 +173,7 @@ source "scripts/sim_mod_mbe.tcl"
 # Loading work.packfp(packfp)
 # Loading work.delayer(bhv)#1
 # Loading work.data_sink(bhv)
-run 10 ns
+run 50 ns
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 #    Time: 0 ns  Iteration: 0  Instance: /tb_fpmul/DUT/i3/i11
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
@@ -520,757 +196,6 @@ run 10 ns
 #    Time: 0 ns  Iteration: 1  Instance: /tb_fpmul/DUT/i2
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 #    Time: 0 ns  Iteration: 1  Instance: /tb_fpmul/DUT/i2
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 5 ns  Iteration: 4  Instance: /tb_fpmul/DUT/i3/i11
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 5 ns  Iteration: 4  Instance: /tb_fpmul/DUT/i3/i11
-run 10 ns
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 15 ns  Iteration: 3  Instance: /tb_fpmul/DUT/i2
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 15 ns  Iteration: 3  Instance: /tb_fpmul/DUT/i2
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 15 ns  Iteration: 3  Instance: /tb_fpmul/DUT/i2
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 15 ns  Iteration: 3  Instance: /tb_fpmul/DUT/i2
-run 10 ns
-run 10 ns
-run 10 ns
-run 10 ns
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 55 ns  Iteration: 2  Instance: /tb_fpmul/DS
-run 10 ns
-run 10 ns
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 75 ns  Iteration: 2  Instance: /tb_fpmul/DS
-run 10 ns
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 85 ns  Iteration: 2  Instance: /tb_fpmul/DS
-run 10 ns
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 95 ns  Iteration: 2  Instance: /tb_fpmul/DS
-run 10 ns
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 105 ns  Iteration: 2  Instance: /tb_fpmul/DS
-quit -sim
-source "scripts/sim_mod_mbe.tcl"
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package std_logic_unsigned
-# -- Compiling entity clk_gen
-# -- Compiling architecture bhv of clk_gen
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package std_logic_unsigned
-# -- Loading package textio
-# -- Loading package std_logic_textio
-# -- Compiling entity data_maker
-# -- Compiling architecture beh of data_maker
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package std_logic_unsigned
-# -- Loading package textio
-# -- Loading package std_logic_textio
-# -- Compiling entity data_sink
-# -- Compiling architecture bhv of data_sink
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package std_logic_unsigned
-# -- Loading package textio
-# -- Loading package std_logic_textio
-# -- Compiling entity delayer
-# -- Compiling architecture bhv of delayer
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package std_logic_unsigned
-# -- Compiling entity fpnormalize
-# -- Compiling architecture fpnormalize of fpnormalize
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package std_logic_unsigned
-# -- Compiling entity fpround
-# -- Compiling architecture fpround of fpround
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Compiling entity packfp
-# -- Compiling architecture packfp of packfp
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Compiling entity unpackfp
-# -- Compiling architecture unpackfp of unpackfp
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Compiling entity ha
-# -- Compiling architecture structure of ha
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Compiling entity fa
-# -- Compiling architecture structure of fa
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Compiling entity dadda
-# -- Compiling architecture structure of dadda
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package numeric_std
-# -- Compiling entity pj_generator
-# -- Compiling architecture bhv_1 of pj_generator
-# -- Compiling architecture bhv_2 of pj_generator
-# -- Loading entity pj_generator
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package numeric_std
-# -- Compiling entity mbe
-# -- Compiling architecture structure of mbe
-# -- Loading entity pj_generator
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Compiling entity fpmul_stage1
-# -- Compiling architecture struct of fpmul_stage1
-# -- Loading entity unpackfp
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Compiling entity fpmul_stage2
-# -- Compiling architecture struct of fpmul_stage2
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Compiling entity fpmul_stage3
-# -- Compiling architecture struct of fpmul_stage3
-# -- Loading package std_logic_unsigned
-# -- Loading entity fpnormalize
-# -- Loading entity fpround
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Compiling entity fpmul_stage4
-# -- Compiling architecture struct of fpmul_stage4
-# -- Loading package std_logic_unsigned
-# -- Loading entity fpnormalize
-# -- Loading entity packfp
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Compiling entity fpmul
-# -- Compiling architecture pipeline of fpmul
-# -- Loading entity fpmul_stage1
-# -- Loading entity fpmul_stage2
-# -- Loading entity fpmul_stage3
-# -- Loading entity fpmul_stage4
-# Model Technology ModelSim SE vlog 6.2g Compiler 2007.02 Feb 21 2007
-# -- Compiling module tb_fpmul
-# 
-# Top level modules:
-# 	tb_fpmul
-# vsim work.tb_fpmul 
-# ** Note: (vsim-3812) Design is being optimized...
-# Loading work.tb_fpmul(fast)
-# Loading /software/mentor/modelsim_6.2g/linux/../std.standard
-# Loading /software/mentor/modelsim_6.2g/linux/../ieee.std_logic_1164(body)
-# Loading /software/mentor/modelsim_6.2g/linux/../ieee.std_logic_arith(body)
-# Loading /software/mentor/modelsim_6.2g/linux/../ieee.std_logic_unsigned(body)
-# Loading work.clk_gen(bhv)
-# Loading /software/mentor/modelsim_6.2g/linux/../std.textio(body)
-# Loading /software/mentor/modelsim_6.2g/linux/../ieee.std_logic_textio(body)
-# Loading work.data_maker(beh)
-# Loading work.fpmul(pipeline)#1
-# Loading work.fpmul_stage1(struct)
-# Loading work.unpackfp(unpackfp)
-# Loading work.fpmul_stage2(struct)
-# Loading /software/mentor/modelsim_6.2g/linux/../ieee.numeric_std(body)
-# Loading work.mbe(structure)
-# Loading work.pj_generator(bhv_2)
-# Loading work.dadda(structure)
-# Loading work.ha(structure)
-# Loading work.fa(structure)
-# Loading work.fpmul_stage3(struct)#1
-# Loading work.fpnormalize(fpnormalize)#1
-# Loading work.fpround(fpround)#1
-# Loading work.fpmul_stage4(struct)
-# Loading work.packfp(packfp)
-# Loading work.delayer(bhv)#1
-# Loading work.data_sink(bhv)
-run 60 ns
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 0  Instance: /tb_fpmul/DUT/i3/i11
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 0  Instance: /tb_fpmul/DUT/i3/i11
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 0  Instance: /tb_fpmul/DUT/i2
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 0  Instance: /tb_fpmul/DUT/i2
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 0  Instance: /tb_fpmul/DUT/i2
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 0  Instance: /tb_fpmul/DUT/i2
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 0  Instance: /tb_fpmul/DUT/i2
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 1  Instance: /tb_fpmul/DUT/i2
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 1  Instance: /tb_fpmul/DUT/i2
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 1  Instance: /tb_fpmul/DUT/i2
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 1  Instance: /tb_fpmul/DUT/i2
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 5 ns  Iteration: 4  Instance: /tb_fpmul/DUT/i3/i11
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 5 ns  Iteration: 4  Instance: /tb_fpmul/DUT/i3/i11
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 15 ns  Iteration: 3  Instance: /tb_fpmul/DUT/i2
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 15 ns  Iteration: 3  Instance: /tb_fpmul/DUT/i2
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 15 ns  Iteration: 3  Instance: /tb_fpmul/DUT/i2
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 15 ns  Iteration: 3  Instance: /tb_fpmul/DUT/i2
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 55 ns  Iteration: 2  Instance: /tb_fpmul/DS
-run 10 ns
-quit -sim
-source "scripts/sim_basic.tcl"
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package std_logic_unsigned
-# -- Compiling entity clk_gen
-# -- Compiling architecture bhv of clk_gen
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package std_logic_unsigned
-# -- Loading package textio
-# -- Loading package std_logic_textio
-# -- Compiling entity data_maker
-# -- Compiling architecture beh of data_maker
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package std_logic_unsigned
-# -- Loading package textio
-# -- Loading package std_logic_textio
-# -- Compiling entity data_sink
-# -- Compiling architecture bhv of data_sink
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package std_logic_unsigned
-# -- Loading package textio
-# -- Loading package std_logic_textio
-# -- Compiling entity delayer
-# -- Compiling architecture bhv of delayer
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package std_logic_unsigned
-# -- Compiling entity fpnormalize
-# -- Compiling architecture fpnormalize of fpnormalize
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package std_logic_unsigned
-# -- Compiling entity fpround
-# -- Compiling architecture fpround of fpround
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Compiling entity packfp
-# -- Compiling architecture packfp of packfp
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Compiling entity unpackfp
-# -- Compiling architecture unpackfp of unpackfp
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Compiling entity fpmul_stage1
-# -- Compiling architecture struct of fpmul_stage1
-# -- Loading entity unpackfp
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Compiling entity fpmul_stage2
-# -- Compiling architecture struct of fpmul_stage2
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Compiling entity fpmul_stage3
-# -- Compiling architecture struct of fpmul_stage3
-# -- Loading package std_logic_unsigned
-# -- Loading entity fpnormalize
-# -- Loading entity fpround
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Compiling entity fpmul_stage4
-# -- Compiling architecture struct of fpmul_stage4
-# -- Loading package std_logic_unsigned
-# -- Loading entity fpnormalize
-# -- Loading entity packfp
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Compiling entity fpmul
-# -- Compiling architecture pipeline of fpmul
-# -- Loading entity fpmul_stage1
-# -- Loading entity fpmul_stage2
-# -- Loading entity fpmul_stage3
-# -- Loading entity fpmul_stage4
-# Model Technology ModelSim SE vlog 6.2g Compiler 2007.02 Feb 21 2007
-# -- Compiling module tb_fpmul
-# 
-# Top level modules:
-# 	tb_fpmul
-# vsim work.tb_fpmul 
-# ** Note: (vsim-3812) Design is being optimized...
-# Loading work.tb_fpmul(fast)
-# Loading /software/mentor/modelsim_6.2g/linux/../std.standard
-# Loading /software/mentor/modelsim_6.2g/linux/../ieee.std_logic_1164(body)
-# Loading /software/mentor/modelsim_6.2g/linux/../ieee.std_logic_arith(body)
-# Loading /software/mentor/modelsim_6.2g/linux/../ieee.std_logic_unsigned(body)
-# Loading work.clk_gen(bhv)
-# Loading /software/mentor/modelsim_6.2g/linux/../std.textio(body)
-# Loading /software/mentor/modelsim_6.2g/linux/../ieee.std_logic_textio(body)
-# Loading work.data_maker(beh)
-# Loading work.fpmul(pipeline)#1
-# Loading work.fpmul_stage1(struct)
-# Loading work.unpackfp(unpackfp)
-# Loading work.fpmul_stage2(struct)
-# Loading work.fpmul_stage3(struct)#1
-# Loading work.fpnormalize(fpnormalize)#1
-# Loading work.fpround(fpround)#1
-# Loading work.fpmul_stage4(struct)
-# Loading work.packfp(packfp)
-# Loading work.delayer(bhv)#1
-# Loading work.data_sink(bhv)
-run 100 ns
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 0  Instance: /tb_fpmul/DUT/i3/i11
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 0  Instance: /tb_fpmul/DUT/i3/i11
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 0  Instance: /tb_fpmul/DUT/i2
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 0  Instance: /tb_fpmul/DUT/i2
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 0  Instance: /tb_fpmul/DUT/i2
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 0  Instance: /tb_fpmul/DUT/i2
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 0  Instance: /tb_fpmul/DUT/i2
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 0  Instance: /tb_fpmul/DUT/i2
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 0  Instance: /tb_fpmul/DUT/i2
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 1  Instance: /tb_fpmul/DUT/i2
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 1  Instance: /tb_fpmul/DUT/i2
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 1  Instance: /tb_fpmul/DUT/i2
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 1  Instance: /tb_fpmul/DUT/i2
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 5 ns  Iteration: 3  Instance: /tb_fpmul/DUT/i2
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 5 ns  Iteration: 3  Instance: /tb_fpmul/DUT/i2
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 5 ns  Iteration: 3  Instance: /tb_fpmul/DUT/i2
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 5 ns  Iteration: 3  Instance: /tb_fpmul/DUT/i2
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 5 ns  Iteration: 3  Instance: /tb_fpmul/DUT/i2
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 5 ns  Iteration: 3  Instance: /tb_fpmul/DUT/i2
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 5 ns  Iteration: 4  Instance: /tb_fpmul/DUT/i3/i11
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 5 ns  Iteration: 4  Instance: /tb_fpmul/DUT/i3/i11
-quit -sim
-source "scripts/sim_mod.tcl"
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package std_logic_unsigned
-# -- Compiling entity clk_gen
-# -- Compiling architecture bhv of clk_gen
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package std_logic_unsigned
-# -- Loading package textio
-# -- Loading package std_logic_textio
-# -- Compiling entity data_maker
-# -- Compiling architecture beh of data_maker
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package std_logic_unsigned
-# -- Loading package textio
-# -- Loading package std_logic_textio
-# -- Compiling entity data_sink
-# -- Compiling architecture bhv of data_sink
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package std_logic_unsigned
-# -- Loading package textio
-# -- Loading package std_logic_textio
-# -- Compiling entity delayer
-# -- Compiling architecture bhv of delayer
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package std_logic_unsigned
-# -- Compiling entity fpnormalize
-# -- Compiling architecture fpnormalize of fpnormalize
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package std_logic_unsigned
-# -- Compiling entity fpround
-# -- Compiling architecture fpround of fpround
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Compiling entity packfp
-# -- Compiling architecture packfp of packfp
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Compiling entity unpackfp
-# -- Compiling architecture unpackfp of unpackfp
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Compiling entity fpmul_stage1
-# -- Compiling architecture struct of fpmul_stage1
-# -- Loading entity unpackfp
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Compiling entity fpmul_stage2
-# -- Compiling architecture struct of fpmul_stage2
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Compiling entity fpmul_stage3
-# -- Compiling architecture struct of fpmul_stage3
-# -- Loading package std_logic_unsigned
-# -- Loading entity fpnormalize
-# -- Loading entity fpround
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Compiling entity fpmul_stage4
-# -- Compiling architecture struct of fpmul_stage4
-# -- Loading package std_logic_unsigned
-# -- Loading entity fpnormalize
-# -- Loading entity packfp
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Compiling entity fpmul
-# -- Compiling architecture pipeline of fpmul
-# -- Loading entity fpmul_stage1
-# -- Loading entity fpmul_stage2
-# -- Loading entity fpmul_stage3
-# -- Loading entity fpmul_stage4
-# Model Technology ModelSim SE vlog 6.2g Compiler 2007.02 Feb 21 2007
-# -- Compiling module tb_fpmul
-# 
-# Top level modules:
-# 	tb_fpmul
-# vsim work.tb_fpmul 
-# ** Note: (vsim-3812) Design is being optimized...
-# Loading work.tb_fpmul(fast)
-# Loading /software/mentor/modelsim_6.2g/linux/../std.standard
-# Loading /software/mentor/modelsim_6.2g/linux/../ieee.std_logic_1164(body)
-# Loading /software/mentor/modelsim_6.2g/linux/../ieee.std_logic_arith(body)
-# Loading /software/mentor/modelsim_6.2g/linux/../ieee.std_logic_unsigned(body)
-# Loading work.clk_gen(bhv)
-# Loading /software/mentor/modelsim_6.2g/linux/../std.textio(body)
-# Loading /software/mentor/modelsim_6.2g/linux/../ieee.std_logic_textio(body)
-# Loading work.data_maker(beh)
-# Loading work.fpmul(pipeline)#1
-# Loading work.fpmul_stage1(struct)
-# Loading work.unpackfp(unpackfp)
-# Loading work.fpmul_stage2(struct)
-# Loading work.fpmul_stage3(struct)#1
-# Loading work.fpnormalize(fpnormalize)#1
-# Loading work.fpround(fpround)#1
-# Loading work.fpmul_stage4(struct)
-# Loading work.packfp(packfp)
-# Loading work.delayer(bhv)#1
-# Loading work.data_sink(bhv)
-run 100 ns
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 0  Instance: /tb_fpmul/DUT/i3/i11
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 0  Instance: /tb_fpmul/DUT/i3/i11
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 0  Instance: /tb_fpmul/DUT/i2
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 0  Instance: /tb_fpmul/DUT/i2
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 0  Instance: /tb_fpmul/DUT/i2
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 0  Instance: /tb_fpmul/DUT/i2
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 0  Instance: /tb_fpmul/DUT/i2
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 0  Instance: /tb_fpmul/DUT/i2
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 0  Instance: /tb_fpmul/DUT/i2
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 1  Instance: /tb_fpmul/DUT/i2
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 1  Instance: /tb_fpmul/DUT/i2
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 1  Instance: /tb_fpmul/DUT/i2
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 1  Instance: /tb_fpmul/DUT/i2
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 5 ns  Iteration: 3  Instance: /tb_fpmul/DUT/i2
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 5 ns  Iteration: 3  Instance: /tb_fpmul/DUT/i2
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 5 ns  Iteration: 4  Instance: /tb_fpmul/DUT/i3/i11
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 5 ns  Iteration: 4  Instance: /tb_fpmul/DUT/i3/i11
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 15 ns  Iteration: 3  Instance: /tb_fpmul/DUT/i2
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 15 ns  Iteration: 3  Instance: /tb_fpmul/DUT/i2
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 15 ns  Iteration: 3  Instance: /tb_fpmul/DUT/i2
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 15 ns  Iteration: 3  Instance: /tb_fpmul/DUT/i2
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 15 ns  Iteration: 3  Instance: /tb_fpmul/DUT/i2
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 15 ns  Iteration: 3  Instance: /tb_fpmul/DUT/i2
-quit -sim
-source "scripts/sim_mod_fgp.tcl"
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package std_logic_unsigned
-# -- Compiling entity clk_gen
-# -- Compiling architecture bhv of clk_gen
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package std_logic_unsigned
-# -- Loading package textio
-# -- Loading package std_logic_textio
-# -- Compiling entity data_maker
-# -- Compiling architecture beh of data_maker
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package std_logic_unsigned
-# -- Loading package textio
-# -- Loading package std_logic_textio
-# -- Compiling entity data_sink
-# -- Compiling architecture bhv of data_sink
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package std_logic_unsigned
-# -- Loading package textio
-# -- Loading package std_logic_textio
-# -- Compiling entity delayer
-# -- Compiling architecture bhv of delayer
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package std_logic_unsigned
-# -- Compiling entity fpnormalize
-# -- Compiling architecture fpnormalize of fpnormalize
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package std_logic_unsigned
-# -- Compiling entity fpround
-# -- Compiling architecture fpround of fpround
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Compiling entity packfp
-# -- Compiling architecture packfp of packfp
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Compiling entity unpackfp
-# -- Compiling architecture unpackfp of unpackfp
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Compiling entity fpmul_stage1
-# -- Compiling architecture struct of fpmul_stage1
-# -- Loading entity unpackfp
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Compiling entity fpmul_stage2
-# -- Compiling architecture struct of fpmul_stage2
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Compiling entity fpmul_stage3
-# -- Compiling architecture struct of fpmul_stage3
-# -- Loading package std_logic_unsigned
-# -- Loading entity fpnormalize
-# -- Loading entity fpround
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Compiling entity fpmul_stage4
-# -- Compiling architecture struct of fpmul_stage4
-# -- Loading package std_logic_unsigned
-# -- Loading entity fpnormalize
-# -- Loading entity packfp
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Compiling entity fpmul
-# -- Compiling architecture pipeline of fpmul
-# -- Loading entity fpmul_stage1
-# -- Loading entity fpmul_stage2
-# -- Loading entity fpmul_stage3
-# -- Loading entity fpmul_stage4
-# Model Technology ModelSim SE vlog 6.2g Compiler 2007.02 Feb 21 2007
-# -- Compiling module tb_fpmul
-# 
-# Top level modules:
-# 	tb_fpmul
-# vsim work.tb_fpmul 
-# ** Note: (vsim-3812) Design is being optimized...
-# Loading work.tb_fpmul(fast)
-# Loading /software/mentor/modelsim_6.2g/linux/../std.standard
-# Loading /software/mentor/modelsim_6.2g/linux/../ieee.std_logic_1164(body)
-# Loading /software/mentor/modelsim_6.2g/linux/../ieee.std_logic_arith(body)
-# Loading /software/mentor/modelsim_6.2g/linux/../ieee.std_logic_unsigned(body)
-# Loading work.clk_gen(bhv)
-# Loading /software/mentor/modelsim_6.2g/linux/../std.textio(body)
-# Loading /software/mentor/modelsim_6.2g/linux/../ieee.std_logic_textio(body)
-# Loading work.data_maker(beh)
-# Loading work.fpmul(pipeline)#1
-# Loading work.fpmul_stage1(struct)
-# Loading work.unpackfp(unpackfp)
-# Loading work.fpmul_stage2(struct)
-# Loading work.fpmul_stage3(struct)#1
-# Loading work.fpnormalize(fpnormalize)#1
-# Loading work.fpround(fpround)#1
-# Loading work.fpmul_stage4(struct)
-# Loading work.packfp(packfp)
-# Loading work.delayer(bhv)#1
-# Loading work.data_sink(bhv)
-run 100 ns
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 0  Instance: /tb_fpmul/DUT/i3/i11
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 0  Instance: /tb_fpmul/DUT/i3/i11
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 0  Instance: /tb_fpmul/DUT/i2
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 0  Instance: /tb_fpmul/DUT/i2
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 0  Instance: /tb_fpmul/DUT/i2
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 0  Instance: /tb_fpmul/DUT/i2
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 0  Instance: /tb_fpmul/DUT/i2
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 0  Instance: /tb_fpmul/DUT/i2
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 0  Instance: /tb_fpmul/DUT/i2
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 1  Instance: /tb_fpmul/DUT/i2
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 1  Instance: /tb_fpmul/DUT/i2
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 1  Instance: /tb_fpmul/DUT/i2
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 1  Instance: /tb_fpmul/DUT/i2
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 5 ns  Iteration: 3  Instance: /tb_fpmul/DUT/i2
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 5 ns  Iteration: 3  Instance: /tb_fpmul/DUT/i2
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 15 ns  Iteration: 3  Instance: /tb_fpmul/DUT/i2
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 15 ns  Iteration: 3  Instance: /tb_fpmul/DUT/i2
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 #    Time: 15 ns  Iteration: 3  Instance: /tb_fpmul/DUT/i2
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
@@ -1449,7 +374,7 @@ source "scripts/sim_mod_fgp_mbe.tcl"
 # Loading work.packfp(packfp)
 # Loading work.delayer(bhv)#1
 # Loading work.data_sink(bhv)
-run 100 ns
+run 50 ns
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 #    Time: 0 ns  Iteration: 0  Instance: /tb_fpmul/DUT/i3/i11
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
@@ -1484,638 +409,7 @@ run 100 ns
 #    Time: 15 ns  Iteration: 4  Instance: /tb_fpmul/DUT/i3/i11
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 #    Time: 15 ns  Iteration: 4  Instance: /tb_fpmul/DUT/i3/i11
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 85 ns  Iteration: 2  Instance: /tb_fpmul/DS
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 95 ns  Iteration: 2  Instance: /tb_fpmul/DS
-add wave sim:/tb_fpmul/DUT/i2/mult/a_sig
-source "scripts/sim_mod_fgp_mbe.tcl"
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package std_logic_unsigned
-# -- Compiling entity clk_gen
-# -- Compiling architecture bhv of clk_gen
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package std_logic_unsigned
-# -- Loading package textio
-# -- Loading package std_logic_textio
-# -- Compiling entity data_maker
-# -- Compiling architecture beh of data_maker
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package std_logic_unsigned
-# -- Loading package textio
-# -- Loading package std_logic_textio
-# -- Compiling entity data_sink
-# -- Compiling architecture bhv of data_sink
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package std_logic_unsigned
-# -- Loading package textio
-# -- Loading package std_logic_textio
-# -- Compiling entity delayer
-# -- Compiling architecture bhv of delayer
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package std_logic_unsigned
-# -- Compiling entity fpnormalize
-# -- Compiling architecture fpnormalize of fpnormalize
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package std_logic_unsigned
-# -- Compiling entity fpround
-# -- Compiling architecture fpround of fpround
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Compiling entity packfp
-# -- Compiling architecture packfp of packfp
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Compiling entity unpackfp
-# -- Compiling architecture unpackfp of unpackfp
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Compiling entity ha
-# -- Compiling architecture structure of ha
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Compiling entity fa
-# -- Compiling architecture structure of fa
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Compiling entity dadda
-# -- Compiling architecture structure of dadda
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package numeric_std
-# -- Compiling entity pj_generator
-# -- Compiling architecture bhv_1 of pj_generator
-# -- Compiling architecture bhv_2 of pj_generator
-# -- Loading entity pj_generator
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package numeric_std
-# -- Compiling entity mbe
-# -- Compiling architecture structure of mbe
-# -- Loading entity pj_generator
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Compiling entity fpmul_stage1
-# -- Compiling architecture struct of fpmul_stage1
-# -- Loading entity unpackfp
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Compiling entity fpmul_stage2
-# -- Compiling architecture struct of fpmul_stage2
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Compiling entity fpmul_stage3
-# -- Compiling architecture struct of fpmul_stage3
-# -- Loading package std_logic_unsigned
-# -- Loading entity fpnormalize
-# -- Loading entity fpround
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Compiling entity fpmul_stage4
-# -- Compiling architecture struct of fpmul_stage4
-# -- Loading package std_logic_unsigned
-# -- Loading entity fpnormalize
-# -- Loading entity packfp
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Compiling entity fpmul
-# -- Compiling architecture pipeline of fpmul
-# -- Loading entity fpmul_stage1
-# -- Loading entity fpmul_stage2
-# -- Loading entity fpmul_stage3
-# -- Loading entity fpmul_stage4
-# Model Technology ModelSim SE vlog 6.2g Compiler 2007.02 Feb 21 2007
-# -- Compiling module tb_fpmul
-# 
-# Top level modules:
-# 	tb_fpmul
-# vsim work.tb_fpmul 
-# ** Note: (vsim-3812) Design is being optimized...
-# Loading work.tb_fpmul(fast)
-# Loading /software/mentor/modelsim_6.2g/linux/../std.standard
-# Loading /software/mentor/modelsim_6.2g/linux/../ieee.std_logic_1164(body)
-# Loading /software/mentor/modelsim_6.2g/linux/../ieee.std_logic_arith(body)
-# Loading /software/mentor/modelsim_6.2g/linux/../ieee.std_logic_unsigned(body)
-# Loading work.clk_gen(bhv)
-# Loading /software/mentor/modelsim_6.2g/linux/../std.textio(body)
-# Loading /software/mentor/modelsim_6.2g/linux/../ieee.std_logic_textio(body)
-# Loading work.data_maker(beh)
-# Loading work.fpmul(pipeline)#1
-# Loading work.fpmul_stage1(struct)
-# Loading work.unpackfp(unpackfp)
-# Loading work.fpmul_stage2(struct)
-# Loading /software/mentor/modelsim_6.2g/linux/../ieee.numeric_std(body)
-# Loading work.mbe(structure)
-# Loading work.pj_generator(bhv_2)
-# Loading work.dadda(structure)
-# Loading work.ha(structure)
-# Loading work.fa(structure)
-# Loading work.fpmul_stage3(struct)#1
-# Loading work.fpnormalize(fpnormalize)#1
-# Loading work.fpround(fpround)#1
-# Loading work.fpmul_stage4(struct)
-# Loading work.packfp(packfp)
-# Loading work.delayer(bhv)#1
-# Loading work.data_sink(bhv)
-run 10 ns
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 0  Instance: /tb_fpmul/DUT/i3/i11
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 0  Instance: /tb_fpmul/DUT/i3/i11
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 0  Instance: /tb_fpmul/DUT/i2
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 0  Instance: /tb_fpmul/DUT/i2
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 0  Instance: /tb_fpmul/DUT/i2
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 0  Instance: /tb_fpmul/DUT/i2
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 0  Instance: /tb_fpmul/DUT/i2
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 1  Instance: /tb_fpmul/DUT/i2
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 1  Instance: /tb_fpmul/DUT/i2
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 1  Instance: /tb_fpmul/DUT/i2
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 1  Instance: /tb_fpmul/DUT/i2
-source "scripts/sim_mod_fgp_mbe.tcl"
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package std_logic_unsigned
-# -- Compiling entity clk_gen
-# -- Compiling architecture bhv of clk_gen
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package std_logic_unsigned
-# -- Loading package textio
-# -- Loading package std_logic_textio
-# -- Compiling entity data_maker
-# -- Compiling architecture beh of data_maker
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package std_logic_unsigned
-# -- Loading package textio
-# -- Loading package std_logic_textio
-# -- Compiling entity data_sink
-# -- Compiling architecture bhv of data_sink
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package std_logic_unsigned
-# -- Loading package textio
-# -- Loading package std_logic_textio
-# -- Compiling entity delayer
-# -- Compiling architecture bhv of delayer
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package std_logic_unsigned
-# -- Compiling entity fpnormalize
-# -- Compiling architecture fpnormalize of fpnormalize
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package std_logic_unsigned
-# -- Compiling entity fpround
-# -- Compiling architecture fpround of fpround
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Compiling entity packfp
-# -- Compiling architecture packfp of packfp
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Compiling entity unpackfp
-# -- Compiling architecture unpackfp of unpackfp
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Compiling entity ha
-# -- Compiling architecture structure of ha
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Compiling entity fa
-# -- Compiling architecture structure of fa
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Compiling entity dadda
-# -- Compiling architecture structure of dadda
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package numeric_std
-# -- Compiling entity pj_generator
-# -- Compiling architecture bhv_1 of pj_generator
-# -- Compiling architecture bhv_2 of pj_generator
-# -- Loading entity pj_generator
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package numeric_std
-# -- Compiling entity mbe
-# -- Compiling architecture structure of mbe
-# -- Loading entity pj_generator
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Compiling entity fpmul_stage1
-# -- Compiling architecture struct of fpmul_stage1
-# -- Loading entity unpackfp
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Compiling entity fpmul_stage2
-# -- Compiling architecture struct of fpmul_stage2
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Compiling entity fpmul_stage3
-# -- Compiling architecture struct of fpmul_stage3
-# -- Loading package std_logic_unsigned
-# -- Loading entity fpnormalize
-# -- Loading entity fpround
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Compiling entity fpmul_stage4
-# -- Compiling architecture struct of fpmul_stage4
-# -- Loading package std_logic_unsigned
-# -- Loading entity fpnormalize
-# -- Loading entity packfp
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Compiling entity fpmul
-# -- Compiling architecture pipeline of fpmul
-# -- Loading entity fpmul_stage1
-# -- Loading entity fpmul_stage2
-# -- Loading entity fpmul_stage3
-# -- Loading entity fpmul_stage4
-# Model Technology ModelSim SE vlog 6.2g Compiler 2007.02 Feb 21 2007
-# -- Compiling module tb_fpmul
-# 
-# Top level modules:
-# 	tb_fpmul
-# vsim work.tb_fpmul 
-# ** Note: (vsim-3812) Design is being optimized...
-# Loading work.tb_fpmul(fast)
-# Loading /software/mentor/modelsim_6.2g/linux/../std.standard
-# Loading /software/mentor/modelsim_6.2g/linux/../ieee.std_logic_1164(body)
-# Loading /software/mentor/modelsim_6.2g/linux/../ieee.std_logic_arith(body)
-# Loading /software/mentor/modelsim_6.2g/linux/../ieee.std_logic_unsigned(body)
-# Loading work.clk_gen(bhv)
-# Loading /software/mentor/modelsim_6.2g/linux/../std.textio(body)
-# Loading /software/mentor/modelsim_6.2g/linux/../ieee.std_logic_textio(body)
-# Loading work.data_maker(beh)
-# Loading work.fpmul(pipeline)#1
-# Loading work.fpmul_stage1(struct)
-# Loading work.unpackfp(unpackfp)
-# Loading work.fpmul_stage2(struct)
-# Loading /software/mentor/modelsim_6.2g/linux/../ieee.numeric_std(body)
-# Loading work.mbe(structure)
-# Loading work.pj_generator(bhv_2)
-# Loading work.dadda(structure)
-# Loading work.ha(structure)
-# Loading work.fa(structure)
-# Loading work.fpmul_stage3(struct)#1
-# Loading work.fpnormalize(fpnormalize)#1
-# Loading work.fpround(fpround)#1
-# Loading work.fpmul_stage4(struct)
-# Loading work.packfp(packfp)
-# Loading work.delayer(bhv)#1
-# Loading work.data_sink(bhv)
-run 20 ns
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 0  Instance: /tb_fpmul/DUT/i3/i11
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 0  Instance: /tb_fpmul/DUT/i3/i11
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 0  Instance: /tb_fpmul/DUT/i2
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 0  Instance: /tb_fpmul/DUT/i2
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 0  Instance: /tb_fpmul/DUT/i2
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 0  Instance: /tb_fpmul/DUT/i2
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 0  Instance: /tb_fpmul/DUT/i2
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 1  Instance: /tb_fpmul/DUT/i2
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 1  Instance: /tb_fpmul/DUT/i2
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 1  Instance: /tb_fpmul/DUT/i2
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 1  Instance: /tb_fpmul/DUT/i2
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 15 ns  Iteration: 3  Instance: /tb_fpmul/DUT/i2
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 15 ns  Iteration: 3  Instance: /tb_fpmul/DUT/i2
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 15 ns  Iteration: 3  Instance: /tb_fpmul/DUT/i2
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 15 ns  Iteration: 3  Instance: /tb_fpmul/DUT/i2
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 15 ns  Iteration: 4  Instance: /tb_fpmul/DUT/i3/i11
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 15 ns  Iteration: 4  Instance: /tb_fpmul/DUT/i3/i11
-run 10 ns
-run 10 ns
-run 10 ns
-run 10 ns
-run 10 ns
-run 10 ns
-run 10 ns
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 85 ns  Iteration: 2  Instance: /tb_fpmul/DS
-run 10 ns
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 95 ns  Iteration: 2  Instance: /tb_fpmul/DS
-restart
-# Loading work.tb_fpmul(fast)
-run 30 ns
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 0  Instance: /tb_fpmul/DUT/i3/i11
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 0  Instance: /tb_fpmul/DUT/i3/i11
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 0  Instance: /tb_fpmul/DUT/i2
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 0  Instance: /tb_fpmul/DUT/i2
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 0  Instance: /tb_fpmul/DUT/i2
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 0  Instance: /tb_fpmul/DUT/i2
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 0  Instance: /tb_fpmul/DUT/i2
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 1  Instance: /tb_fpmul/DUT/i2
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 1  Instance: /tb_fpmul/DUT/i2
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 1  Instance: /tb_fpmul/DUT/i2
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 1  Instance: /tb_fpmul/DUT/i2
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 15 ns  Iteration: 3  Instance: /tb_fpmul/DUT/i2
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 15 ns  Iteration: 3  Instance: /tb_fpmul/DUT/i2
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 15 ns  Iteration: 3  Instance: /tb_fpmul/DUT/i2
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 15 ns  Iteration: 3  Instance: /tb_fpmul/DUT/i2
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 15 ns  Iteration: 4  Instance: /tb_fpmul/DUT/i3/i11
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 15 ns  Iteration: 4  Instance: /tb_fpmul/DUT/i3/i11
-source "scripts/sim_mod_fgp_mbe.tcl"
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package std_logic_unsigned
-# -- Compiling entity clk_gen
-# -- Compiling architecture bhv of clk_gen
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package std_logic_unsigned
-# -- Loading package textio
-# -- Loading package std_logic_textio
-# -- Compiling entity data_maker
-# -- Compiling architecture beh of data_maker
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package std_logic_unsigned
-# -- Loading package textio
-# -- Loading package std_logic_textio
-# -- Compiling entity data_sink
-# -- Compiling architecture bhv of data_sink
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package std_logic_unsigned
-# -- Loading package textio
-# -- Loading package std_logic_textio
-# -- Compiling entity delayer
-# -- Compiling architecture bhv of delayer
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package std_logic_unsigned
-# -- Compiling entity fpnormalize
-# -- Compiling architecture fpnormalize of fpnormalize
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package std_logic_unsigned
-# -- Compiling entity fpround
-# -- Compiling architecture fpround of fpround
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Compiling entity packfp
-# -- Compiling architecture packfp of packfp
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Compiling entity unpackfp
-# -- Compiling architecture unpackfp of unpackfp
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Compiling entity ha
-# -- Compiling architecture structure of ha
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Compiling entity fa
-# -- Compiling architecture structure of fa
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Compiling entity dadda
-# -- Compiling architecture structure of dadda
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package numeric_std
-# -- Compiling entity pj_generator
-# -- Compiling architecture bhv_1 of pj_generator
-# -- Compiling architecture bhv_2 of pj_generator
-# -- Loading entity pj_generator
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package numeric_std
-# -- Compiling entity mbe
-# -- Compiling architecture structure of mbe
-# ** Error: ../src/fpuvhdl_mbe/mbe/mbe.vhd(89): (vcom-1152) Index value 32 is out of index range 31 downto 0 of ieee.std_logic_1164.std_logic_vector.
-# ** Error: ../src/fpuvhdl_mbe/mbe/mbe.vhd(89): (vcom-1152) Index value 32 is out of index range 31 downto 0 of ieee.std_logic_1164.std_logic_vector.
-# -- Loading entity pj_generator
-# ** Error: ../src/fpuvhdl_mbe/mbe/mbe.vhd(108): near "generate": expecting: ';'
-# /software/mentor/modelsim_6.2g/linux/vcom failed.
-source "scripts/sim_mod_fgp_mbe.tcl"
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package std_logic_unsigned
-# -- Compiling entity clk_gen
-# -- Compiling architecture bhv of clk_gen
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package std_logic_unsigned
-# -- Loading package textio
-# -- Loading package std_logic_textio
-# -- Compiling entity data_maker
-# -- Compiling architecture beh of data_maker
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package std_logic_unsigned
-# -- Loading package textio
-# -- Loading package std_logic_textio
-# -- Compiling entity data_sink
-# -- Compiling architecture bhv of data_sink
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package std_logic_unsigned
-# -- Loading package textio
-# -- Loading package std_logic_textio
-# -- Compiling entity delayer
-# -- Compiling architecture bhv of delayer
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package std_logic_unsigned
-# -- Compiling entity fpnormalize
-# -- Compiling architecture fpnormalize of fpnormalize
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package std_logic_unsigned
-# -- Compiling entity fpround
-# -- Compiling architecture fpround of fpround
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Compiling entity packfp
-# -- Compiling architecture packfp of packfp
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Compiling entity unpackfp
-# -- Compiling architecture unpackfp of unpackfp
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Compiling entity ha
-# -- Compiling architecture structure of ha
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Compiling entity fa
-# -- Compiling architecture structure of fa
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Compiling entity dadda
-# -- Compiling architecture structure of dadda
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package numeric_std
-# -- Compiling entity pj_generator
-# -- Compiling architecture bhv_1 of pj_generator
-# -- Compiling architecture bhv_2 of pj_generator
-# -- Loading entity pj_generator
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package numeric_std
-# -- Compiling entity mbe
-# -- Compiling architecture structure of mbe
-# ** Error: ../src/fpuvhdl_mbe/mbe/mbe.vhd(89): (vcom-1152) Index value 32 is out of index range 31 downto 0 of ieee.std_logic_1164.std_logic_vector.
-# ** Error: ../src/fpuvhdl_mbe/mbe/mbe.vhd(89): (vcom-1152) Index value 32 is out of index range 31 downto 0 of ieee.std_logic_1164.std_logic_vector.
-# -- Loading entity pj_generator
-# ** Error: ../src/fpuvhdl_mbe/mbe/mbe.vhd(159): VHDL Compiler exiting
-# /software/mentor/modelsim_6.2g/linux/vcom failed.
+run 50 ns
 source "scripts/sim_mod_fgp_mbe.tcl"
 # Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
 # -- Loading package standard
@@ -2316,6 +610,10 @@ run 30 ns
 #    Time: 15 ns  Iteration: 4  Instance: /tb_fpmul/DUT/i3/i11
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 #    Time: 15 ns  Iteration: 4  Instance: /tb_fpmul/DUT/i3/i11
+run 50 ns
+run 50 ns
+run 50 ns
+quit -sim
 source "scripts/sim_mod_fgp_mbe.tcl"
 # Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
 # -- Loading package standard
@@ -2481,7 +779,7 @@ source "scripts/sim_mod_fgp_mbe.tcl"
 # Loading work.packfp(packfp)
 # Loading work.delayer(bhv)#1
 # Loading work.data_sink(bhv)
-run 30 ns
+run 50 ns
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 #    Time: 0 ns  Iteration: 0  Instance: /tb_fpmul/DUT/i3/i11
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
@@ -2516,23 +814,178 @@ run 30 ns
 #    Time: 15 ns  Iteration: 4  Instance: /tb_fpmul/DUT/i3/i11
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 #    Time: 15 ns  Iteration: 4  Instance: /tb_fpmul/DUT/i3/i11
-run 10 ns
-run 10 ns
-run 10 ns
-run 10 ns
-run 10 ns
-run 10 ns
-run 10 ns
-run 10 ns
-run 10 ns
-run 10 ns
-run 10 ns
-run 10 ns
-run 10 ns
-run 10 ns
-restart
+run 50 ns
+run 50 ns
+run 50 ns
+run 50 ns
+run 50 ns
+run 50 ns
+source "scripts/sim_mod_fgp_mbe.tcl"
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Compiling entity clk_gen
+# -- Compiling architecture bhv of clk_gen
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Loading package textio
+# -- Loading package std_logic_textio
+# -- Compiling entity data_maker
+# -- Compiling architecture beh of data_maker
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Loading package textio
+# -- Loading package std_logic_textio
+# -- Compiling entity data_sink
+# -- Compiling architecture bhv of data_sink
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Loading package textio
+# -- Loading package std_logic_textio
+# -- Compiling entity delayer
+# -- Compiling architecture bhv of delayer
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Compiling entity fpnormalize
+# -- Compiling architecture fpnormalize of fpnormalize
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Compiling entity fpround
+# -- Compiling architecture fpround of fpround
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity packfp
+# -- Compiling architecture packfp of packfp
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity unpackfp
+# -- Compiling architecture unpackfp of unpackfp
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Compiling entity ha
+# -- Compiling architecture structure of ha
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Compiling entity fa
+# -- Compiling architecture structure of fa
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Compiling entity dadda
+# -- Compiling architecture structure of dadda
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Compiling entity pj_generator
+# -- Compiling architecture bhv_1 of pj_generator
+# -- Compiling architecture bhv_2 of pj_generator
+# -- Loading entity pj_generator
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Compiling entity mbe
+# -- Compiling architecture structure of mbe
+# -- Loading entity pj_generator
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity fpmul_stage1
+# -- Compiling architecture struct of fpmul_stage1
+# -- Loading entity unpackfp
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity fpmul_stage2
+# -- Compiling architecture struct of fpmul_stage2
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity fpmul_stage3
+# -- Compiling architecture struct of fpmul_stage3
+# -- Loading package std_logic_unsigned
+# -- Loading entity fpnormalize
+# -- Loading entity fpround
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity fpmul_stage4
+# -- Compiling architecture struct of fpmul_stage4
+# -- Loading package std_logic_unsigned
+# -- Loading entity fpnormalize
+# -- Loading entity packfp
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity fpmul
+# -- Compiling architecture pipeline of fpmul
+# -- Loading entity fpmul_stage1
+# -- Loading entity fpmul_stage2
+# -- Loading entity fpmul_stage3
+# -- Loading entity fpmul_stage4
+# Model Technology ModelSim SE vlog 6.2g Compiler 2007.02 Feb 21 2007
+# -- Compiling module tb_fpmul
+# 
+# Top level modules:
+# 	tb_fpmul
+# vsim work.tb_fpmul 
+# ** Note: (vsim-3812) Design is being optimized...
 # Loading work.tb_fpmul(fast)
-run 10 ns
+# Loading /software/mentor/modelsim_6.2g/linux/../std.standard
+# Loading /software/mentor/modelsim_6.2g/linux/../ieee.std_logic_1164(body)
+# Loading /software/mentor/modelsim_6.2g/linux/../ieee.std_logic_arith(body)
+# Loading /software/mentor/modelsim_6.2g/linux/../ieee.std_logic_unsigned(body)
+# Loading work.clk_gen(bhv)
+# Loading /software/mentor/modelsim_6.2g/linux/../std.textio(body)
+# Loading /software/mentor/modelsim_6.2g/linux/../ieee.std_logic_textio(body)
+# Loading work.data_maker(beh)
+# Loading work.fpmul(pipeline)#1
+# Loading work.fpmul_stage1(struct)
+# Loading work.unpackfp(unpackfp)
+# Loading work.fpmul_stage2(struct)
+# Loading /software/mentor/modelsim_6.2g/linux/../ieee.numeric_std(body)
+# Loading work.mbe(structure)
+# Loading work.pj_generator(bhv_2)
+# Loading work.dadda(structure)
+# Loading work.ha(structure)
+# Loading work.fa(structure)
+# Loading work.fpmul_stage3(struct)#1
+# Loading work.fpnormalize(fpnormalize)#1
+# Loading work.fpround(fpround)#1
+# Loading work.fpmul_stage4(struct)
+# Loading work.packfp(packfp)
+# Loading work.delayer(bhv)#1
+# Loading work.data_sink(bhv)
+run 150 ns
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 #    Time: 0 ns  Iteration: 0  Instance: /tb_fpmul/DUT/i3/i11
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
@@ -2555,7 +1008,6 @@ run 10 ns
 #    Time: 0 ns  Iteration: 1  Instance: /tb_fpmul/DUT/i2
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 #    Time: 0 ns  Iteration: 1  Instance: /tb_fpmul/DUT/i2
-run 10 ns
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 #    Time: 15 ns  Iteration: 3  Instance: /tb_fpmul/DUT/i2
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
@@ -2568,4 +1020,8 @@ run 10 ns
 #    Time: 15 ns  Iteration: 4  Instance: /tb_fpmul/DUT/i3/i11
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 #    Time: 15 ns  Iteration: 4  Instance: /tb_fpmul/DUT/i3/i11
-run 10 ns
+run 50 ns
+run 50 n
+# Invalid time value: 50 n
+run 50 ns
+quit -sim

@@ -1,6 +1,6 @@
 #@ # 
 #@ # Running dc_shell Version O-2018.06-SP4 for linux64 -- Nov 27, 2018
-#@ # Date:   Fri Dec  4 00:00:48 2020
+#@ # Date:   Mon Mar 22 19:32:07 2021
 #@ # Run by: isa32@localhost.localdomain
 #@ 
 
@@ -6638,8 +6638,8 @@ source /home/isa32/DELIVER/isa-lab-2/syn/.synopsys_dc.setup
 #@ set synthetic_library [list "dw_foundation.sldb" ]
 #@ # -- End source /home/isa32/DELIVER/isa-lab-2/syn/.synopsys_dc.setup
 
-source "scripts/pparch/full_compilation_pparch.tcl"
-#@ # -- Starting source scripts/pparch/full_compilation_pparch.tcl
+source "scripts/mbe/ultra/full_compilation_fgp_mbe_ultra.tcl"
+#@ # -- Starting source scripts/mbe/ultra/full_compilation_fgp_mbe_ultra.tcl
 
 #@ #Delete the working directory -> to clean everything
 #@ file delete -force "work"
@@ -6649,48 +6649,53 @@ source "scripts/pparch/full_compilation_pparch.tcl"
 #@ file mkdir "work"
 #@ echo *************** New work directory created *********************
 #@ 
-#@ source "scripts/analysis.tcl"
-#@ # -- Starting source scripts/analysis.tcl
+#@ source "scripts/mbe/analysis_fgp_mbe.tcl"
+#@ # -- Starting source scripts/mbe/analysis_fgp_mbe.tcl
 
 #@ # Import files into Design Compiler: ANALYZE
 #@ # analyze -f vhdl -lib WORK ../src/<file name>.vhd
 #@ 
 #@ #####################################################
 #@ #	ANALYSIS SCRIPT									#
-#@ #	Design: 		fpuvhdl_mod						#
-#@ #	Last modified:	December 3, 2020 15:30			#	
+#@ #	Design: 		fpuvhdl_mod_fgp_mbe				#
 #@ #####################################################
 #@ 
 #@ 
-#@ analyze -f vhdl -lib WORK ../src/fpuvhdl_mod/common/fpnormalize_fpnormalize.vhd
-#@ analyze -f vhdl -lib WORK ../src/fpuvhdl_mod/common/fpround_fpround.vhd
-#@ analyze -f vhdl -lib WORK ../src/fpuvhdl_mod/common/packfp_packfp.vhd
-#@ analyze -f vhdl -lib WORK ../src/fpuvhdl_mod/common/unpackfp_unpackfp.vhd
-#@ analyze -f vhdl -lib WORK ../src/fpuvhdl_mod/multiplier/fpmul_stage1_struct.vhd
-#@ analyze -f vhdl -lib WORK ../src/fpuvhdl_mod/multiplier/fpmul_stage2_struct.vhd
-#@ analyze -f vhdl -lib WORK ../src/fpuvhdl_mod/multiplier/fpmul_stage3_struct.vhd
-#@ analyze -f vhdl -lib WORK ../src/fpuvhdl_mod/multiplier/fpmul_stage4_struct.vhd
-#@ analyze -f vhdl -lib WORK ../src/fpuvhdl_mod/multiplier/fpmul_pipeline.vhd
+#@ analyze -f vhdl -lib WORK ../src/fpuvhdl_mbe/common/fpnormalize_fpnormalize.vhd
+#@ analyze -f vhdl -lib WORK ../src/fpuvhdl_mbe/common/fpround_fpround.vhd
+#@ analyze -f vhdl -lib WORK ../src/fpuvhdl_mbe/common/packfp_packfp.vhd
+#@ analyze -f vhdl -lib WORK ../src/fpuvhdl_mbe/common/unpackfp_unpackfp.vhd
+#@ 
+#@ analyze -f vhdl -lib WORK ../src/fpuvhdl_mbe/mbe/ha.vhd
+#@ analyze -f vhdl -lib WORK ../src/fpuvhdl_mbe/mbe/fa.vhd
+#@ analyze -f vhdl -lib WORK ../src/fpuvhdl_mbe/mbe/pj_generator.vhd
+#@ analyze -f vhdl -lib WORK ../src/fpuvhdl_mbe/mbe/dadda.vhd
+#@ analyze -f vhdl -lib WORK ../src/fpuvhdl_mbe/mbe/mbe.vhd
+#@ 
+#@ analyze -f vhdl -lib WORK ../src/fpuvhdl_mbe/multiplier/fpmul_stage1_struct.vhd
+#@ analyze -f vhdl -lib WORK ../src/fpuvhdl_mbe/multiplier/fpmul_stage2_struct_fgp_mbe.vhd
+#@ analyze -f vhdl -lib WORK ../src/fpuvhdl_mbe/multiplier/fpmul_stage3_struct.vhd
+#@ analyze -f vhdl -lib WORK ../src/fpuvhdl_mbe/multiplier/fpmul_stage4_struct.vhd
+#@ analyze -f vhdl -lib WORK ../src/fpuvhdl_mbe/multiplier/fpmul_pipeline.vhd
 #@ 
 #@ set power_preserve_rtl_hier_names true
 #@ 
-#@ elaborate FPmul -arch pipeline -lib WORK > ./elaborate.txt
+#@ elaborate FPmul -arch pipeline -lib WORK > ./elaborate_mbe.txt
 #@ uniquify
 #@ link
 #@ 
 #@ 
-#@ # -- End source scripts/analysis.tcl
+#@ # -- End source scripts/mbe/analysis_fgp_mbe.tcl
 
 #@ echo *************** Analysis completed *********************
 #@ 
-#@ source "scripts/pparch/compile_0.tcl"
-#@ # -- Starting source scripts/pparch/compile_0.tcl
+#@ source "scripts/mbe/ultra/compile_0_mbe_ultra.tcl"
+#@ # -- Starting source scripts/mbe/ultra/compile_0_mbe_ultra.tcl
 
 #@ #################################################################################
 #@ #	INITIAL COMPILATION SCRIPT													#
-#@ #	Design: 		fpuvhdl_mod	 / pparch										#
+#@ #	Design: 		fpuvhdl_mod_fgp_mbe											#
 #@ #	Goal:			Find the maximum frequency forcing the clock period to zero #
-#@ #	Last modified:	December 3, 2020 23:24										#	
 #@ #################################################################################
 #@ 
 #@ # Constraints
@@ -6706,57 +6711,21 @@ source "scripts/pparch/full_compilation_pparch.tcl"
 #@ set OLOAD [load_of NangateOpenCellLibrary/BUF_X4/A]
 #@ set_load $OLOAD [all_outputs]
 #@ 
-#@ ungroup -all -flatten
-#@ 
-#@ # Select multiplier implementation
-#@ set_implementation DW02_mult/pparch [find cell *mult*]
-#@ 
-#@ compile
+#@ compile_ultra -retime
 #@ 
 #@ # Timing & Area report
 #@ 
-#@ report_timing > results/pparch/timing_clk_0.txt
-#@ report_area > results/pparch/area_clk_0.txt
-#@ report_resources > results/pparch/res_clk_0.txt
+#@ report_timing > results/mbe/ultra/timing_clk_0_mbe_ultra_rt.txt
+#@ report_area > results/mbe/ultra/area_clk_0_mbe_ultra_rt.txt
 #@ 
-#@ # -- End source scripts/pparch/compile_0.tcl
+#@ 
+#@ # -- End source scripts/mbe/ultra/compile_0_mbe_ultra.tcl
 
 #@ echo *************** Compile with t=0 completed *********************
 #@ 
+#@ #source "scripts/mbe/ultra/compile_1_57_mbe_ultra.tcl"
+#@ #echo *************** Compile with t=0.89 completed *********************
 #@ 
-#@ source "scripts/pparch/compile_1_41.tcl"
-#@ # -- Starting source scripts/pparch/compile_1_41.tcl
+#@ 
+#@ # -- End source scripts/mbe/ultra/full_compilation_fgp_mbe_ultra.tcl
 
-#@ #################################################################################
-#@ #	FINAL COMPILATION SCRIPT													#
-#@ #	Design: 		fpuvhdl_mod	/ pparch										#
-#@ #	Goal:			Find the maximum frequency  								#
-#@ #	Last modified:	December 3, 2020 23:54										#	
-#@ #################################################################################
-#@ 
-#@ # Constraints
-#@ 
-#@ # Timing constraints
-#@ create_clock -name MY_CLK -period 1.45 clk	
-#@ set_dont_touch_network MY_CLK				
-#@ set_clock_uncertainty 0.07 [get_clocks MY_CLK]
-#@ set_input_delay 0.5 -max -clock MY_CLK [remove_from_collection [all_inputs] clk]
-#@ set_output_delay 0.5 -max -clock MY_CLK [all_outputs]
-#@ 
-#@ # Load constraints
-#@ set OLOAD [load_of NangateOpenCellLibrary/BUF_X4/A]
-#@ set_load $OLOAD [all_outputs]
-#@ 
-#@ compile
-#@ 
-#@ # Timing & Area report
-#@ 
-#@ report_timing > results/pparch/timing_clk_1_45.txt
-#@ report_area > results/pparch/area_clk_1_45.txt
-#@ report_resources > results/pparch/res_clk_1_45.txt
-#@ 
-#@ # -- End source scripts/pparch/compile_1_41.tcl
-
-#@ # -- End source scripts/pparch/full_compilation_pparch.tcl
-
-exit

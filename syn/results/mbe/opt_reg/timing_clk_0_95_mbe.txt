@@ -1,0 +1,67 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : FPmul
+Version: O-2018.06-SP4
+Date   : Mon Mar 22 18:33:33 2021
+****************************************
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: I2/mult/MY_CLK_r_REG518_S1
+              (rising edge-triggered flip-flop clocked by MY_CLK)
+  Endpoint: I2/mult/tree/FA2_2_i_32_0/MY_CLK_r_REG364_S2
+            (rising edge-triggered flip-flop clocked by MY_CLK)
+  Path Group: MY_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FPmul              5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock MY_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  I2/mult/MY_CLK_r_REG518_S1/CK (DFF_X1)                  0.00       0.00 r
+  I2/mult/MY_CLK_r_REG518_S1/Q (DFF_X1)                   0.14       0.14 r
+  I2/mult/partial_10/b_in[2] (pj_generator_6)             0.00       0.14 r
+  I2/mult/partial_10/U58/Z (CLKBUF_X3)                    0.11       0.25 r
+  I2/mult/partial_10/U22/ZN (OR3_X1)                      0.06       0.31 r
+  I2/mult/partial_10/U3/ZN (NAND2_X2)                     0.09       0.39 f
+  I2/mult/partial_10/U13/ZN (AOI22_X1)                    0.08       0.48 r
+  I2/mult/partial_10/U12/Z (XOR2_X1)                      0.09       0.57 r
+  I2/mult/partial_10/pj[12] (pj_generator_6)              0.00       0.57 r
+  I2/mult/tree/P10[14] (dadda)                            0.00       0.57 r
+  I2/mult/tree/FA1_4_i_32/B (FA_454)                      0.00       0.57 r
+  I2/mult/tree/FA1_4_i_32/U3/ZN (XNOR2_X1)                0.07       0.64 r
+  I2/mult/tree/FA1_4_i_32/U1/ZN (XNOR2_X1)                0.07       0.71 r
+  I2/mult/tree/FA1_4_i_32/S (FA_454)                      0.00       0.71 r
+  I2/mult/tree/FA2_3_i_32/B (FA_377)                      0.00       0.71 r
+  I2/mult/tree/FA2_3_i_32/U1/S (FA_X1)                    0.12       0.83 f
+  I2/mult/tree/FA2_3_i_32/S (FA_377)                      0.00       0.83 f
+  I2/mult/tree/FA2_2_i_32_0/CIN (FA_278)                  0.00       0.83 f
+  I2/mult/tree/FA2_2_i_32_0/MY_CLK_r_REG364_S2/D (DFF_X1)
+                                                          0.01       0.84 f
+  data arrival time                                                  0.84
+
+  clock MY_CLK (rise edge)                                0.95       0.95
+  clock network delay (ideal)                             0.00       0.95
+  clock uncertainty                                      -0.07       0.88
+  I2/mult/tree/FA2_2_i_32_0/MY_CLK_r_REG364_S2/CK (DFF_X1)
+                                                          0.00       0.88 r
+  library setup time                                     -0.04       0.84
+  data required time                                                 0.84
+  --------------------------------------------------------------------------
+  data required time                                                 0.84
+  data arrival time                                                 -0.84
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1

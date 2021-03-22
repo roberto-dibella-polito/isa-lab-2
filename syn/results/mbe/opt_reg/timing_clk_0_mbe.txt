@@ -1,0 +1,100 @@
+Information: Updating design information... (UID-85)
+Warning: There are infeasible paths detected in your design that were ignored during optimization. Please run 'report_timing -attributes' and/or 'create_qor_snapshot/query_qor_snapshot -infeasible_paths' to identify these paths.  (OPT-1721)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : FPmul
+Version: O-2018.06-SP4
+Date   : Mon Mar 22 18:04:18 2021
+****************************************
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: I1/B_SIG_reg[11]
+              (rising edge-triggered flip-flop clocked by MY_CLK)
+  Endpoint: I2/prod_to_sig_reg[42]
+            (rising edge-triggered flip-flop clocked by MY_CLK)
+  Path Group: MY_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FPmul              5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock MY_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  I1/B_SIG_reg[11]/CK (DFF_X1)                            0.00       0.00 r
+  I1/B_SIG_reg[11]/Q (DFF_X1)                             0.20       0.20 r
+  I1/B_SIG[11] (FPmul_stage1)                             0.00       0.20 r
+  I2/B_SIG[11] (FPmul_stage2)                             0.00       0.20 r
+  I2/mult/B_SIG[11] (mbe)                                 0.00       0.20 r
+  I2/mult/partial_5/b_in[2] (pj_generator_11)             0.00       0.20 r
+  I2/mult/partial_5/U29/ZN (INV_X1)                       0.09       0.29 f
+  I2/mult/partial_5/U27/ZN (INV_X1)                       0.17       0.46 r
+  I2/mult/partial_5/U41/ZN (NAND2_X1)                     0.06       0.51 f
+  I2/mult/partial_5/U49/ZN (OAI22_X1)                     0.06       0.57 r
+  I2/mult/partial_5/U50/ZN (INV_X1)                       0.03       0.60 f
+  I2/mult/partial_5/U26/Z (BUF_X2)                        0.06       0.67 f
+  I2/mult/partial_5/U106/ZN (OAI21_X1)                    0.05       0.72 r
+  I2/mult/partial_5/U18/ZN (XNOR2_X1)                     0.06       0.78 r
+  I2/mult/partial_5/pj[20] (pj_generator_11)              0.00       0.78 r
+  I2/mult/tree/P5[22] (dadda)                             0.00       0.78 r
+  I2/mult/tree/FA1_2_i_30/CIN (FA_474)                    0.00       0.78 r
+  I2/mult/tree/FA1_2_i_30/U7/ZN (XNOR2_X1)                0.06       0.85 r
+  I2/mult/tree/FA1_2_i_30/U6/ZN (XNOR2_X1)                0.07       0.91 r
+  I2/mult/tree/FA1_2_i_30/S (FA_474)                      0.00       0.91 r
+  I2/mult/tree/FA2_2_i_30/A (FA_406)                      0.00       0.91 r
+  I2/mult/tree/FA2_2_i_30/U3/ZN (XNOR2_X1)                0.06       0.98 r
+  I2/mult/tree/FA2_2_i_30/U4/ZN (XNOR2_X1)                0.07       1.04 r
+  I2/mult/tree/FA2_2_i_30/S (FA_406)                      0.00       1.04 r
+  I2/mult/tree/FA2_2_i_30_0/A (FA_280)                    0.00       1.04 r
+  I2/mult/tree/FA2_2_i_30_0/U4/ZN (NOR2_X1)               0.03       1.07 f
+  I2/mult/tree/FA2_2_i_30_0/U2/ZN (AOI21_X1)              0.06       1.13 r
+  I2/mult/tree/FA2_2_i_30_0/COUT (FA_280)                 0.00       1.13 r
+  I2/mult/tree/FA4_1_i_31/CIN (FA_195)                    0.00       1.13 r
+  I2/mult/tree/FA4_1_i_31/U4/ZN (XNOR2_X1)                0.06       1.20 r
+  I2/mult/tree/FA4_1_i_31/U3/ZN (XNOR2_X1)                0.07       1.27 r
+  I2/mult/tree/FA4_1_i_31/S (FA_195)                      0.00       1.27 r
+  I2/mult/tree/FA5_1_i_31/B (FA_91)                       0.00       1.27 r
+  I2/mult/tree/FA5_1_i_31/U3/ZN (XNOR2_X1)                0.04       1.31 f
+  I2/mult/tree/FA5_1_i_31/U2/ZN (XNOR2_X1)                0.06       1.37 f
+  I2/mult/tree/FA5_1_i_31/S (FA_91)                       0.00       1.37 f
+  I2/mult/tree/FA6_1_i_31/B (FA_32)                       0.00       1.37 f
+  I2/mult/tree/FA6_1_i_31/U3/ZN (XNOR2_X1)                0.06       1.43 f
+  I2/mult/tree/FA6_1_i_31/U2/ZN (XNOR2_X1)                0.06       1.49 f
+  I2/mult/tree/FA6_1_i_31/S (FA_32)                       0.00       1.49 f
+  I2/mult/tree/PARTIAL_2[31] (dadda)                      0.00       1.49 f
+  I2/mult/add_156/B[31] (mbe_DW01_add_4)                  0.00       1.49 f
+  I2/mult/add_156/U895/ZN (NAND2_X1)                      0.04       1.53 r
+  I2/mult/add_156/U945/ZN (OAI21_X1)                      0.03       1.57 f
+  I2/mult/add_156/U629/ZN (AOI21_X1)                      0.06       1.63 r
+  I2/mult/add_156/U962/ZN (OAI21_X1)                      0.03       1.66 f
+  I2/mult/add_156/U811/ZN (AOI21_X1)                      0.07       1.73 r
+  I2/mult/add_156/U571/Z (BUF_X2)                         0.06       1.78 r
+  I2/mult/add_156/U990/ZN (OAI21_X1)                      0.04       1.82 f
+  I2/mult/add_156/U884/ZN (XNOR2_X1)                      0.05       1.87 f
+  I2/mult/add_156/SUM[42] (mbe_DW01_add_4)                0.00       1.87 f
+  I2/mult/PROD[42] (mbe)                                  0.00       1.87 f
+  I2/prod_to_sig_reg[42]/D (DFF_X1)                       0.01       1.88 f
+  data arrival time                                                  1.88
+
+  clock MY_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                      -0.07      -0.07
+  I2/prod_to_sig_reg[42]/CK (DFF_X1)                      0.00      -0.07 r
+  library setup time                                     -0.04      -0.11
+  data required time                                                -0.11
+  --------------------------------------------------------------------------
+  data required time                                                -0.11
+  data arrival time                                                 -1.88
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -1.99
+
+
+1
