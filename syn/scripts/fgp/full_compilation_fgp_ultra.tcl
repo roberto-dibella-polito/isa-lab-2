@@ -10,9 +10,10 @@ source "scripts/fgp/analysis_fgp.tcl"
 echo *************** Analysis completed *********************
 
 source "scripts/fgp/compile_0_ultra.tcl"
-echo *************** Compile with t=0 completed *********************
+echo *************** Compile ULTRA with t=0 completed *********************
 
-source "scripts/fgp/compile_1_68_ultra.tcl"
+source "scripts/fgp/compile_final_ultra.tcl"
 echo *************** Compile with t=1.68 completed *********************
 
+report_timing
 
