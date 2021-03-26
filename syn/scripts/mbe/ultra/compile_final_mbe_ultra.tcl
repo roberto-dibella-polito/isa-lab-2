@@ -7,7 +7,7 @@
 # Constraints
 
 # Timing constraints
-create_clock -name MY_CLK -period 1.57 clk	
+create_clock -name MY_CLK -period 1.75 clk	
 set_dont_touch_network MY_CLK				
 set_clock_uncertainty 0.07 [get_clocks MY_CLK]
 set_input_delay 0.5 -max -clock MY_CLK [remove_from_collection [all_inputs] clk]
@@ -17,12 +17,12 @@ set_output_delay 0.5 -max -clock MY_CLK [all_outputs]
 set OLOAD [load_of NangateOpenCellLibrary/BUF_X4/A]
 set_load $OLOAD [all_outputs]
 
-#compile_ultra
-compile
+compile_ultra
+
 
 # Timing & Area report
 
-report_timing > results/mbe/timing_clk_1_57_mbe_p_ultra.txt
-report_area > results/mbe/area_clk_1_57_p_ultra.txt
+report_timing > results/mbe/ultra/timing_clk_1_75_mbe_ultra.txt
+report_area > results/mbe/ultra/area_clk_1_75_mbe_ultra.txt
 
 

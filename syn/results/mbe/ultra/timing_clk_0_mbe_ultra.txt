@@ -8,7 +8,7 @@ Report : timing
         -max_paths 1
 Design : FPmul
 Version: O-2018.06-SP4
-Date   : Mon Mar 22 18:46:25 2021
+Date   : Fri Mar 26 18:34:01 2021
 ****************************************
 
 Operating Conditions: typical   Library: NangateOpenCellLibrary

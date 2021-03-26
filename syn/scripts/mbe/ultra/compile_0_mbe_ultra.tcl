@@ -17,11 +17,11 @@ set_output_delay 0.5 -max -clock MY_CLK [all_outputs]
 set OLOAD [load_of NangateOpenCellLibrary/BUF_X4/A]
 set_load $OLOAD [all_outputs]
 
-compile_ultra -retime
+compile_ultra
 
 # Timing & Area report
 
-report_timing > results/mbe/ultra/timing_clk_0_mbe_ultra_rt.txt
-report_area > results/mbe/ultra/area_clk_0_mbe_ultra_rt.txt
+report_timing > results/mbe/ultra/timing_clk_0_mbe_ultra.txt
+report_area > results/mbe/ultra/area_clk_0_mbe_ultra.txt
 
 

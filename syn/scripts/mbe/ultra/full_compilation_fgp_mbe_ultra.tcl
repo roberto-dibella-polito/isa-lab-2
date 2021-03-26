@@ -10,9 +10,9 @@ source "scripts/mbe/analysis_fgp_mbe.tcl"
 echo *************** Analysis completed *********************
 
 source "scripts/mbe/ultra/compile_0_mbe_ultra.tcl"
-echo *************** Compile with t=0 completed *********************
+echo *************** Compile ULTRA with t=0 completed *********************
 
-#source "scripts/mbe/ultra/compile_1_57_mbe_ultra.tcl"
-#echo *************** Compile with t=0.89 completed *********************
+source "scripts/mbe/ultra/compile_final_mbe_ultra.tcl"
+echo *************** Compile ULTRA Final completed *********************
 
-
+report_timing
